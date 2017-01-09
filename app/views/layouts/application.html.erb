@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Penzi</title>
+    <%= csrf_meta_tags %>
+ <!--  included stylesheets -->
+    <%= stylesheet_link_tag   'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'animate.css' %>
+    <%= stylesheet_link_tag 'component.css' %>
+    <%= stylesheet_link_tag 'hover_pack.css' %>
+    <%= stylesheet_link_tag 'style.css' %>
+
+ <!-- included js external sheets -->
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'hover_pack.js' %>
+    <%= javascript_include_tag 'easing.js' %>
+    <%= javascript_include_tag 'wow.min.js' %>
+    <%= javascript_include_tag 'move-top.js' %>
+
+
+  </head>
+
+  <body>
+  <!-- banner -->
+<div class="banner">
+	<div class="container">
+		<div class="header-nav wow fadeInDown animated" data-wow-delay=".5s">
+						<nav class="navbar navbar-default">
+							<!-- Brand and toggle get grouped for better mobile display -->
+							<div class="navbar-header logo">
+								<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+									<span class="sr-only">Toggle navigation</span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								</button>
+								<h1>
+									<a class="navbar-brand link link--yaku" href="index.html"><span>U</span><span>l</span><span>t</span><span>i</span><span>m</span><span>a</span><span>t</span><span>e</span></a>
+								</h1>
+								
+							</div>
+							<!-- Collect the nav links, forms, and other content for toggling -->
+							<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
+								<nav class="cl-effect-1">
+									<ul class="nav navbar-nav ">
+										<li><a class="hvr-overline-from-left button2 active" href="index.html">Home</a></li>
+										<li><a class="hvr-overline-from-left button2" href="about.html">About</a></li>
+										<li><a class="hvr-overline-from-left button2" href="shortcodes.html">Shortcodes</a></li>
+										<li><a class="hvr-overline-from-left button2" href="gallery.html">Gallery</a></li>
+										<li><a class="hvr-overline-from-left button2" href="news.html">News</a></li>
+										<li><a class="hvr-overline-from-left button2" href="contact.html">Contact</a></li>
+									</ul>
+								</nav>
+							</div><!-- /navbar-collapse -->
+						</nav>
+		</div>
+		<div class="banner-info wow fadeInLeft animated" data-wow-delay=".5s">
+			<%= javascript_include_tag 'responsiveslides.min.js' %>
+				<script>
+										// You can also use "$(window).load(function() {"
+										$(function () {
+										 // Slideshow 4
+										$("#slider3").responsiveSlides({
+											auto: true,
+											pager: true,
+											nav: false,
+											speed: 500,
+											namespace: "callbacks",
+											before: function () {
+										$('.events').append("<li>before event fired.</li>");
+										},
+										after: function () {
+											$('.events').append("<li>after event fired.</li>");
+											}
+											});
+											});
+				</script>
+			<div id="top" class="callbacks_container">
+					<ul class="rslides" id="slider3">
+						<li>
+							<div class="banner-text">
+								<h4>Design furniture elite and modern collections</h4>
+								<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium 
+								doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore 
+								veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim eaque ipsa quae ab illo inventore 
+								veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+								<a href="single.html">Readmore</a>
+							</div>
+						</li>
+						<li>
+							<div class="banner-text">
+								<h4>Creative styles and comfort gives you more flexible</h4>
+								<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium 
+								doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore 
+								veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim eaque ipsa quae ab illo inventore 
+								veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+								<a href="single.html">Readmore</a>
+							</div>
+						</li>
+						<li>
+							<div class="banner-text">
+								<h4>We provide best design advice for your interior design</h4>
+								<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium 
+								doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore 
+								veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim eaque ipsa quae ab illo inventore 
+								veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+								<a href="single.html">Readmore</a>
+							</div>
+						</li>
+					</ul>
+			</div>
+		</div>
+	</div>
+</div>
+    <%= yield %>
+  </body>
+</html>
