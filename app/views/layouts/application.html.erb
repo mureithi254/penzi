@@ -22,7 +22,7 @@
 
   <body>
   <!-- banner -->
-<div class="banner">
+
 	<div class="container">
 		<div class="header-nav wow fadeInDown animated" data-wow-delay=".5s">
 						<nav class="navbar navbar-default">
@@ -54,64 +54,7 @@
 							</div><!-- /navbar-collapse -->
 						</nav>
 		</div>
-		<div class="banner-info wow fadeInLeft animated" data-wow-delay=".5s">
-			<%= javascript_include_tag 'responsiveslides.min.js' %>
-				<script>
-										// You can also use "$(window).load(function() {"
-										$(function () {
-										 // Slideshow 4
-										$("#slider3").responsiveSlides({
-											auto: true,
-											pager: true,
-											nav: false,
-											speed: 500,
-											namespace: "callbacks",
-											before: function () {
-										$('.events').append("<li>before event fired.</li>");
-										},
-										after: function () {
-											$('.events').append("<li>after event fired.</li>");
-											}
-											});
-											});
-				</script>
-			<div id="top" class="callbacks_container">
-					<ul class="rslides" id="slider3">
-						<li>
-							<div class="banner-text">
-								<h4>Design furniture elite and modern collections</h4>
-								<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium 
-								doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore 
-								veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim eaque ipsa quae ab illo inventore 
-								veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-								<a href="single.html">Readmore</a>
-							</div>
-						</li>
-						<li>
-							<div class="banner-text">
-								<h4>Creative styles and comfort gives you more flexible</h4>
-								<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium 
-								doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore 
-								veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim eaque ipsa quae ab illo inventore 
-								veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-								<a href="single.html">Readmore</a>
-							</div>
-						</li>
-						<li>
-							<div class="banner-text">
-								<h4>We provide best design advice for your interior design</h4>
-								<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium 
-								doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore 
-								veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim eaque ipsa quae ab illo inventore 
-								veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-								<a href="single.html">Readmore</a>
-							</div>
-						</li>
-					</ul>
-			</div>
-		</div>
 	</div>
-</div>
     <%= yield %>
   </body>
 </html>
