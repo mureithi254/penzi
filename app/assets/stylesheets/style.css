@@ -53,7 +53,7 @@ body a:hover{
 	height: 32px;
 	border: none;
 	text-indent: 100%;
-	background: url("../images/arr.png") no-repeat 0px 0px;
+	background: url("./arr.png") no-repeat 0px 0px;
 }
 #toTopHover {
 	width: 32px;
@@ -306,22 +306,22 @@ text-decoration:none;
     margin-top: 118px;
 }
 .captn a.icon_1{
-	background:url(../images/icons.png) no-repeat 6px 5px;	
+	background:url(./icons.png) no-repeat 6px 5px;	
 }
 .captn a.icon_2{
-	background:url(../images/icons.png) no-repeat 6px -18px;	
+	background:url(./icons.png) no-repeat 6px -18px;	
 }
 .captn a.icon_3{
-	background:url(../images/icons.png) no-repeat 4px -40px;	
+	background:url(./icons.png) no-repeat 4px -40px;	
 }
 .captn a.icon_4{
-	background:url(../images/icons.png) no-repeat 4px -62px;	
+	background:url(./icons.png) no-repeat 4px -62px;	
 }
 
 /*-- //team --*/
 /*-- services --*/
 .services{
-	background:url(../images/pic8.jpg) no-repeat center;
+	background:url(./pic8.jpg) no-repeat center;
 	background-size:cover;
 	-webkit-background-size: cover;
 	-o-background-size: cover;
@@ -490,7 +490,7 @@ img.zoom-img:hover {
     color: #c4c4c4;
 }
 .contact-left form input[type="submit"]{
-    background: url(../images/message.png) no-repeat 12px 7px;
+    background: url(./message.png) no-repeat 12px 7px;
     width: 48px;
     height: 40px;
     border: 1px solid #fff;
@@ -560,7 +560,7 @@ img.zoom-img:hover {
 }
 .footer-bottom a:before {
     content: '';
-    background:url(../images/icons.png)no-repeat 3px 1px;
+    background:url(./icons.png)no-repeat 3px 1px;
 	width: 20px;
     height: 20px;
     display: block;
@@ -890,11 +890,11 @@ p.bot-para {
   opacity: 1.0;
 }
 a.callbacks_nav.callbacks1_nav.prev {
-	background: transparent url("../images/themes.png") no-repeat 0px 0px;
+	background: transparent url("./themes.png") no-repeat 0px 0px;
   left: -3.1%;
 }
 .callbacks_nav.next {
-	background: transparent url("../images/themes.png") no-repeat -46px 0px;
+	background: transparent url("./themes.png") no-repeat -46px 0px;
   left: 100%;
 }
 #slider3-pager a,#slider4-pager a  {
@@ -978,7 +978,7 @@ left:46%;
 ul.social-slide li i{
 	width:70px;
 	height:74px;
-	background:url(../images/img-resources.png)no-repeat;
+	background:url(./img-resources.png)no-repeat;
 	display: inline-block;
 	margin:0px 15px;
 }
@@ -1020,12 +1020,12 @@ ul.social-slide li i.mac{
 	background: #000;	
 }
 a.callbacks_nav.callbacks2_nav.prev {
-background: transparent url("../images/2.png") no-repeat left top;
+background: transparent url("./2.png") no-repeat left top;
 width:23px;
 height:23px;
 }
 a.callbacks_nav.callbacks2_nav.next{
-background: transparent url("../images/2.png") no-repeat -29px 0px;
+background: transparent url("./2.png") no-repeat -29px 0px;
 width:23px;
 height:23px;
 }
@@ -1068,7 +1068,7 @@ color:#fff;
 /*-- //banner --*/
 /*-- items --*/
 .items {
-    background: url(../images/pic11.jpg) no-repeat center;
+    background: url(./pic11.jpg) no-repeat center;
     background-size: cover;
     -webkit-background-size: cover;
     -o-background-size: cover;

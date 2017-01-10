@@ -1,2 +1,303 @@
-<h1>Gallery#gallery</h1>
-<p>Find me in app/views/gallery/gallery.html.erb</p>
+<div class="gallery">
+	<div class="container">
+		<h3 class="tittle">Gallery</h3>
+			<script src="js/hover_pack.js"></script>
+				
+				<div class="port-grid wow fadeInRight animated" data-wow-delay=".5s">
+					<div class="portfolio-wrapper">
+						<a href="#portfolioModal1" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal">
+							<%= image_tag("g1.jpg", :alt => " ") %>	
+						</a>
+					</div>
+					<div class="portfolio-wrapper">
+						<a href="#portfolioModal2" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal">
+						<%= image_tag("g8.jpg", :alt => " ") %>	
+						</a>
+					</div>
+				</div>
+				<div class="port-grid wow fadeInRight animated" data-wow-delay=".5s">
+					<div class="portfolio-wrapper">
+						<a href="#portfolioModal3" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal">
+							<%= image_tag("g5.jpg", :alt => " ") %>
+						</a>
+					</div>
+					<div class="portfolio-wrapper">
+						<a href="#portfolioModal4" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal">
+							<%= image_tag("g2.jpg", :alt => " ") %>
+						</a>
+					</div>
+				</div>	
+				<div class="port-grid wow fadeInLeft animated" data-wow-delay=".5s">
+					<div class="portfolio-wrapper">
+						<a href="#portfolioModal5" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal">
+							<%= image_tag("g4.jpg", :alt => " ") %>
+						</a>
+					</div>
+					<div class="portfolio-wrapper">
+						<a href="#portfolioModal6" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal">
+							<%= image_tag("g6.jpg", :alt => " ") %>
+						</a>
+					</div>
+				</div>
+				<div class="port-grid wow fadeInLeft animated" data-wow-delay=".5s">
+					<div class="portfolio-wrapper">
+						<a href="#portfolioModal7" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal">
+							<%= image_tag("g3.jpg", :alt => " ") %>	
+						</a>
+					</div>
+					<div class="portfolio-wrapper">
+						<a href="#portfolioModal8" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal">
+							<%= image_tag("g7.jpg", :alt => " ") %>
+						</a>
+					</div>
+				</div>				
+				<div class="clearfix"></div>
+	</div>
+</div>
+<!-- //Gallery -->
+<!-- contact -->
+<div class="contact">
+	<div class="container">
+		<div class="col-md-4 contact-left wow fadeInRight animated" data-wow-delay=".5s">
+			<h3>Address</h3>
+			<h2>Ultimate</h2>
+			<p>Diamond street,<br>
+			260-14 City, Country<br>
+			+62 000-0000-00</p>
+			<ul>
+				<li>Monday - Friday</li>
+				<li>Saturday</li>
+				<li>Sunday</li>
+			</ul>
+			<ul>
+				<li>8:00 am - 11:00 pm</li>
+				<li>10:00 am - 7:00 pm</li>
+				<li>10:00 am - 7:00 pm</li>
+			</ul>
+			<div class="clearfix"></div>
+		</div>
+		<div class="col-md-4 contact-left wow fadeInUp animated" data-wow-delay=".5s">
+			<h3>Links</h3>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="shortcodes.html">Shortcodes</a></li>
+				<li><a href="news.html">News</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+			
+		</div>
+		<div class="col-md-4 contact-left footer-bottom wow fadeInLeft animated" data-wow-delay=".5s">
+			<h3>Signup for Newsletter</h3>
+			<form>
+					<input type="text" value="Enter your email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter your email';}" required="">
+					<input type="submit" value=" ">
+			</form>
+			<a href="#"><span>Facebook</span></a>
+			<a href="#"><span>Pinterest</span></a>
+			<a href="#"><span>LinkedIn </span></a>
+			<a href="#"><span>Behance</span></a>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+</div>
+<div class="footer wow fadeInDown animated" data-wow-delay=".5s">
+	<div class="container">
+		<p> &copy; 2016 Ultimate. All Rights Reserved | Design by  <a href="http://w3layouts.com/"> W3layouts</a></p>
+	</div>
+</div>
+<!-- //contact -->
+<!-- for bootstrap working -->
+	<script src="js/bootstrap.js"></script>
+<!-- //for bootstrap working -->
+<!-- smooth scrolling -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+		/*
+			var defaults = {
+			containerID: 'toTop', // fading element id
+			containerHoverID: 'toTopHover', // fading element hover id
+			scrollSpeed: 1200,
+			easingType: 'linear' 
+			};
+		*/								
+		$().UItoTop({ easingType: 'easeOutQuart' });
+		});
+	</script>
+	<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+<!-- //smooth scrolling -->
+<!-- gallery Modals -->
+<div class="portfolio-modal modal fade slideanim" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content port-modal">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl"></div>
+            </div>
+        </div>
+        <div class="container">
+			<div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <div class="modal-body">
+                        <h3>Ultimate</h3>
+                        <%= image_tag("g11.jpg" ,:class => "img-responsive img-centered" ,:alt => "") %>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="portfolio-modal modal fade slideanim" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content port-modal">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl"></div>
+            </div>
+        </div>
+        <div class="container">
+			<div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <div class="modal-body">
+                        <h3>Ultimate</h3>
+						
+                        <%= image_tag("g81.jpg" ,:class => "img-responsive img-centered" ,:alt => "") %>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="portfolio-modal modal fade slideanim" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content port-modal">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl"></div>
+            </div>
+        </div>
+        <div class="container">
+			<div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <div class="modal-body">
+                        <h3>Ultimate</h3>
+					
+                        <%= image_tag("g51.jpg" ,:class => "img-responsive img-centered" ,:alt => "") %>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="portfolio-modal modal fade slideanim" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content port-modal">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl"></div>
+            </div>
+        </div>
+        <div class="container">
+			<div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <div class="modal-body">
+                        <h3>Ultimate</h3>
+					
+                       <%= image_tag("g21.jpg", :class => "img-responsive img-centered" ,:alt => "") %>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="portfolio-modal modal fade slideanim" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content port-modal">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl"></div>
+            </div>
+        </div>
+        <div class="container">
+			<div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <div class="modal-body">
+                        <h3>Ultimate</h3>
+					
+                        <%= image_tag("g41.jpg" ,:class => "img-responsive img-centered" ,:alt => "") %>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                   
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="portfolio-modal modal fade slideanim" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content port-modal">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl"></div>
+            </div>
+        </div>
+        <div class="container">
+			<div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <div class="modal-body">
+                        <h3>Ultimate</h3>
+				
+                        <%= image_tag("g61.jpg", :class => "img-responsive img-centered" ,:alt => "") %>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="portfolio-modal modal fade slideanim" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content port-modal">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl"></div>
+            </div>
+        </div>
+        <div class="container">
+			<div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <div class="modal-body">
+                        <h3>Ultimate</h3>
+					
+                        <%= image_tag("g31.jpg", :class => "img-responsive img-centered", :alt => "") %>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                      
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="portfolio-modal modal fade slideanim" id="portfolioModal8" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content port-modal">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl"></div>
+            </div>
+        </div>
+        <div class="container">
+			<div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <div class="modal-body">
+                        <h3>Ultimate</h3>
+					
+                        <%= image_tag("g71.jpg" ,:class => "img-responsive img-centered", :alt => "") %>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                     
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

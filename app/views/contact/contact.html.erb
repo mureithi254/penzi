@@ -1,2 +1,134 @@
-<h1>Contact#contact</h1>
-<p>Find me in app/views/contact/contact.html.erb</p>
+<div class="view-map">
+	<h3 class="tittle">View on map</h3>
+	<div class="map wow fadeInUp animated" data-wow-delay=".5s">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d2482.432383990807!2d0.028213999961443994!3d51.52362882484525!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1423469959819"></iframe>
+	</div>
+</div>
+<div class="map-grids">
+	<div class="container">
+		<div class="col-md-3 map-left wow fadeInRight animated" data-wow-delay=".5s">
+			<h3>Information</h3>
+			<p>Pellentesque ut urna eu mauris scele risque auctor volutpat et massa pers piciis iste natus scele risque auctor volutpat.</p>
+		</div>
+		<div class="col-md-6 map-middle wow fadeInUp animated" data-wow-delay=".5s">
+			<h3>Feedback</h3>
+			<form>
+					<input type="text" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" required="">
+					<input type="text" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" required="">
+					<textarea onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message...';}" required="">Message...</textarea>
+					<input type="submit" value="Send" >
+			</form>
+		</div>
+		<div class="col-md-3 map-left wow fadeInLeft animated" data-wow-delay=".5s">
+				<div class="call">
+					<div class="col-xs-3 contact-grdl">
+						<span class="glyphicon glyphicon-phone" aria-hidden="true"></span>
+					</div>
+					<div class="col-xs-9 contact-grdr">
+						<ul>
+							<li>+3402 890 679</li>
+							<li>+5356 890 679</li>
+						</ul>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="call">
+					<div class="col-xs-3 contact-grdl">
+						<span class="glyphicon glyphicon-send" aria-hidden="true"></span>
+					</div>
+					<div class="col-xs-9 contact-grdr">
+						<ul>
+							<li>345 Diamond Street,</li>
+							<li>Greece.</li>
+						</ul>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="call">
+					<div class="col-xs-3 contact-grdl">
+						<span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+					</div>
+					<div class="col-xs-9 contact-grdr">
+						<ul>
+							<li><a href="mailto:info@example.com">info@example.com</a></li>
+						</ul>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+
+		</div>
+		<div class="clearfix"></div>
+	</div>
+</div>
+<!-- //map -->
+<!-- contact -->
+<div class="contact">
+	<div class="container">
+		<div class="col-md-4 contact-left wow fadeInRight animated" data-wow-delay=".5s">
+			<h3>Address</h3>
+			<h2>Ultimate</h2>
+			<p>Diamond street,<br>
+			260-14 City, Country<br>
+			+62 000-0000-00</p>
+			<ul>
+				<li>Monday - Friday</li>
+				<li>Saturday</li>
+				<li>Sunday</li>
+			</ul>
+			<ul>
+				<li>8:00 am - 11:00 pm</li>
+				<li>10:00 am - 7:00 pm</li>
+				<li>10:00 am - 7:00 pm</li>
+			</ul>
+			<div class="clearfix"></div>
+		</div>
+		<div class="col-md-4 contact-left wow fadeInUp animated" data-wow-delay=".5s">
+			<h3>Links</h3>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="shortcodes.html">Shortcodes</a></li>
+				<li><a href="news.html">News</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+			
+		</div>
+		<div class="col-md-4 contact-left footer-bottom wow fadeInLeft animated" data-wow-delay=".5s">
+			<h3>Signup for Newsletter</h3>
+			<form>
+					<input type="text" value="Enter your email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter your email';}" required="">
+					<input type="submit" value=" ">
+			</form>
+			<a href="#"><span>Facebook</span></a>
+			<a href="#"><span>Pinterest</span></a>
+			<a href="#"><span>LinkedIn </span></a>
+			<a href="#"><span>Behance</span></a>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+</div>
+<div class="footer wow fadeInDown animated" data-wow-delay=".5s">
+	<div class="container">
+		<p> &copy; 2016 Ultimate. All Rights Reserved | Design by  <a href="http://w3layouts.com/"> W3layouts</a></p>
+	</div>
+</div>
+<!-- //contact -->
+<!-- for bootstrap working -->
+	<script src="js/bootstrap.js"></script>
+<!-- //for bootstrap working -->
+<!-- smooth scrolling -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+		/*
+			var defaults = {
+			containerID: 'toTop', // fading element id
+			containerHoverID: 'toTopHover', // fading element hover id
+			scrollSpeed: 1200,
+			easingType: 'linear' 
+			};
+		*/								
+		$().UItoTop({ easingType: 'easeOutQuart' });
+		});
+	</script>
+	<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+<!-- //smooth scrolling -->

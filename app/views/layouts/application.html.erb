@@ -17,7 +17,17 @@
     <%= javascript_include_tag 'wow.min.js' %>
     <%= javascript_include_tag 'move-top.js' %>
 
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+	function hideURLbar(){ window.scrollTo(0,1); } </script>
 
+		<script type="text/javascript">
+					jQuery(document).ready(function($) {
+						$(".scroll").click(function(event){		
+							event.preventDefault();
+							$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+						});
+					});
+				</script>
   </head>
 
   <body>
@@ -43,12 +53,12 @@
 							<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
 								<nav class="cl-effect-1">
 									<ul class="nav navbar-nav ">
-										<li><a class="hvr-overline-from-left button2 active" href="index.html">Home</a></li>
-										<li><a class="hvr-overline-from-left button2" href="about.html">About</a></li>
-										<li><a class="hvr-overline-from-left button2" href="shortcodes.html">Shortcodes</a></li>
-										<li><a class="hvr-overline-from-left button2" href="gallery.html">Gallery</a></li>
-										<li><a class="hvr-overline-from-left button2" href="news.html">News</a></li>
-										<li><a class="hvr-overline-from-left button2" href="contact.html">Contact</a></li>
+									  <li><%= link_to "Home", root_path ,:class => "hvr-overline-from-left button2 active" %></li>
+										<li><%= link_to "About", about_about_path ,:class => "hvr-overline-from-left button2" %></li>
+										<li><%= link_to "Short Codes", root_path ,:class => "hvr-overline-from-left button2" %></li>
+										<li><%= link_to "Gallery", gallery_gallery_path ,:class => "hvr-overline-from-left button2" %></li>
+										<li><%= link_to "News", news_news_path ,:class => "hvr-overline-from-left button2" %></li>
+										<li><%= link_to "Contact", contact_contact_path ,:class => "hvr-overline-from-left button2" %></li>
 									</ul>
 								</nav>
 							</div><!-- /navbar-collapse -->
